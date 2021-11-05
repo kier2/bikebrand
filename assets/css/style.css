@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#161616;
+    --secondary-color:#F30C0C;
+    --tri-color:#DBDBDB;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+.header-area{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+h1,h2,h3{font-family: 'Roboto Condensed', sans-serif;}
+.header-area .top-navbar,
+.header-area .main-navbar,
+.sections .inner-sections{
+    width: 90%;
+    margin: 0 auto;
+}
+h1{font-size: 3.5rem; line-height: 1.5;}
+p,a{font-size: 16px;}
+img{width: 100%; height: auto; object-fit: cover;}
+.header-area .top-navbar,
+.header-area .main-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.header-area .top-navbar .nav-left > ul,
+.header-area .top-navbar .nav-right > ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-area .top-navbar .nav-left > ul > li,
+.header-area .top-navbar .nav-right > ul > li{padding: 0 .6rem;}
+.header-area .top-navbar .nav-left > ul > li a,
+.header-area .top-navbar .nav-right > ul > li a{color: var(--tri-color);}
+.logo-wrapper img{
+    width: 15rem;
+}
+.header-area .main-navbar .navbar-menu
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-area .main-navbar .navbar-menu > li{padding: 0 1.2rem;}
+.header-area .main-navbar .navbar-menu > li a
+{   
+    color: #DBDBDB;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.col{width: 50%;}
+.col-wordings{color: var(--tri-color);}
+main{
+    width: 100%;
+}
+.bg-img{width:40%}
+.sections{padding: 4rem 0;}
+.desc{color: var(--tri-color);}
+.intro{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--primary-color);
+}
+.intro .intro-inner{
+    display: flex;
+    align-items: center;
+}
+.intro h1{color: #fff;}
+
+.intro-inner .bg-img{
+    border:2px solid #fff;
+}
+.intro-inner .bg-img,
+.intro-inner .bg-img img{clip-path: polygon(20% 0%, 92% 12%, 92% 95%, 3% 91%);}
